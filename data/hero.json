@@ -1,0 +1,22 @@
+{
+    "name": "Jahnavi Dantuluri",
+    "pronouns": "She/Her",
+    "title": "Finance Professional & Strategic Thinker",
+    "roles": [
+        "Finance Professional",
+        "Operations Specialist",
+        "Strategic Thinker",
+        "FinTech Enthusiast"
+    ],
+    "description": "BBA student at RV University with a focus on finance, complemented by hands-on experience across operations, financial analysis, and market research. Deeply interested in integrating financial systems with technology to build structured, scalable, and impact-driven solutions.",
+    "cta": {
+        "primary": {
+            "label": "View My Work",
+            "href": "#experience"
+        },
+        "secondary": {
+            "label": "Download CV",
+            "href": "/resume.pdf"
+        }
+    }
+}

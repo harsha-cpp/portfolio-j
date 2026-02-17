@@ -1,0 +1,17 @@
+[
+    {
+        "id": "piggywise",
+        "title": "PiggyWise",
+        "tagline": "Making Financial Literacy Engaging & Accessible",
+        "description": "PiggyWise is a concept-driven initiative aimed at making financial literacy engaging and accessible, especially for young individuals. It focuses on building structured financial habits through interactive and intuitive digital experiences.",
+        "mission": "To design a platform that makes it easy for users to learn about money, discuss it openly, and track their financial journey with clarity and purpose. By combining user experience design, behavioral insights, and robust technology, the goal is to support micro-habits, goal setting, and progress tracking in a stigma-free and empowering environment.",
+        "vision": "To cultivate a generation that approaches money with confidence, curiosity, and clarity. Financial literacy should be proactive, inclusive, and human-centered — not reactive or intimidating. PiggyWise envisions financial education as a lifelong companion that evolves with the user and strengthens both financial capability and financial mindset.",
+        "features": [
+            "Interactive financial learning modules",
+            "Micro-habit tracking & goal setting",
+            "Stigma-free money discussion platform",
+            "Progress tracking with clarity",
+            "Behavioral insight-driven UX"
+        ]
+    }
+]

@@ -1,0 +1,61 @@
+{
+    "professional": [
+        {
+            "name": "Financial Analysis",
+            "level": 90
+        },
+        {
+            "name": "Operational Coordination",
+            "level": 85
+        },
+        {
+            "name": "Market Research",
+            "level": 80
+        },
+        {
+            "name": "Process Management",
+            "level": 85
+        },
+        {
+            "name": "Stakeholder Communication",
+            "level": 90
+        },
+        {
+            "name": "Social Listening",
+            "level": 75
+        },
+        {
+            "name": "Analytical Thinking",
+            "level": 90
+        },
+        {
+            "name": "Adaptability",
+            "level": 85
+        }
+    ],
+    "technical": [
+        {
+            "name": "Excel – Finance Tools",
+            "level": 90
+        },
+        {
+            "name": "Salesforce CRM",
+            "level": 75
+        },
+        {
+            "name": "Notion",
+            "level": 85
+        },
+        {
+            "name": "Figma",
+            "level": 70
+        }
+    ],
+    "interests": [
+        "Finance",
+        "FinTech",
+        "Operations",
+        "Technology-enabled systems",
+        "Community-driven initiatives"
+    ]
+}

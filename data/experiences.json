@@ -1,0 +1,62 @@
+[
+    {
+        "id": "csc-global",
+        "title": "Client Order Coordinator",
+        "company": "CSC Global",
+        "period": "Jun 2025 – Present",
+        "location": "Bengaluru, Karnataka, India",
+        "type": "Hybrid",
+        "description": "Currently working in a full-time operational role managing structured client order processes. Responsible for ensuring documentation accuracy, coordinating workflows, and supporting seamless execution across teams.",
+        "highlights": [
+            "Operational systems management",
+            "Process discipline",
+            "Cross-functional coordination",
+            "Global corporate environment"
+        ]
+    },
+    {
+        "id": "outlook-publishing",
+        "title": "Finance Intern",
+        "company": "Outlook Publishing (India) Pvt. Ltd.",
+        "period": "Jun 2024 – Jul 2024",
+        "location": "Bengaluru, Karnataka, India",
+        "type": "Hybrid",
+        "description": "Worked as a finance intern supporting financial operations and documentation. Applied analytical thinking to real-time business scenarios and strengthened understanding of financial workflows and reporting structures.",
+        "highlights": [
+            "Financial operations & documentation",
+            "Excel-based financial tools",
+            "Structured financial reasoning",
+            "Real-time business analysis"
+        ]
+    },
+    {
+        "id": "aol-research",
+        "title": "Market Research Intern",
+        "company": "Art of Living",
+        "period": "Jun 2023",
+        "location": "Bengaluru, Karnataka, India",
+        "type": "On-site",
+        "description": "Contributed to market research initiatives and supported structured research documentation. Strengthened social listening, adaptability, and communication skills through field-based research exposure.",
+        "highlights": [
+            "Market research initiatives",
+            "Social listening",
+            "Field-based research",
+            "Structured documentation"
+        ]
+    },
+    {
+        "id": "aol-seva",
+        "title": "Seva Volunteer",
+        "company": "Art of Living",
+        "period": "Ongoing",
+        "location": "Bengaluru, Karnataka, India",
+        "type": "Community",
+        "description": "Engaged in various community service initiatives including rural development, education support, and disaster relief efforts. Developed leadership, event coordination, and communication skills while fostering personal growth through mindfulness and structured discipline practices.",
+        "highlights": [
+            "Rural development",
+            "Education support",
+            "Disaster relief",
+            "Event coordination"
+        ]
+    }
+]

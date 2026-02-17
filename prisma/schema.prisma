@@ -1,0 +1,83 @@
+// Prisma schema for Jahnavi Dantuluri Portfolio
+// Uses Neon Postgres for serverless deployment
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  name          String?
+  passwordHash  String
+  role          String   @default("admin")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Experience {
+  id          String   @id @default(cuid())
+  title       String
+  company     String
+  period      String
+  location    String
+  type        String   // Hybrid, On-site, Remote, Community
+  description String   @db.Text
+  highlights  String[] // Array of strings
+  order       Int      @default(0)
+  isVisible   Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Skill {
+  id       String @id @default(cuid())
+  name     String
+  level    Int    // 0-100
+  category String // professional, technical
+  order    Int    @default(0)
+}
+
+model Project {
+  id          String           @id @default(cuid())
+  slug        String           @unique
+  title       String
+  tagline     String?
+  description String           @db.Text
+  mission     String?          @db.Text
+  vision      String?          @db.Text
+  features    String[]
+  imageUrl    String?
+  isFeatured  Boolean          @default(false)
+  isVisible   Boolean          @default(true)
+  order       Int              @default(0)
+  sections    ProjectSection[]
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+}
+
+model ProjectSection {
+  id        String  @id @default(cuid())
+  type      String  // hero, text, image, gallery, metrics
+  content   Json    // Flexible content stored as JSON
+  order     Int     @default(0)
+  projectId String
+  project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
+}
+
+model SiteSettings {
+  id          String  @id @default("default")
+  heroName    String  @default("Jahnavi Dantuluri")
+  heroTitle   String  @default("Finance Professional & Strategic Thinker")
+  heroDesc    String? @db.Text
+  resumeUrl   String?
+  email       String?
+  linkedinUrl String?
+  githubUrl   String?
+}
