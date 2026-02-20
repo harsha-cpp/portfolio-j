@@ -6,11 +6,10 @@ import heroData from "@/data/hero.json";
 import MagneticButton from "@/components/ui/MagneticButton";
 
 // Word-by-word reveal animation
-const headingWords = [
+const headingWords: { text: string; accent: boolean; italic?: boolean; break?: boolean }[] = [
     { text: "Hi,", accent: false },
     { text: "I'm", accent: false },
-    { text: "Jahnavi", accent: true },
-    { text: "—", accent: false },
+    { text: "Jahnavi", accent: true, break: true },
     { text: "Finance", accent: false },
     { text: "Professional", accent: false },
     { text: "building", accent: false },
@@ -63,17 +62,20 @@ export default function Hero() {
                 <div className="max-w-2xl">
                     <h1 className="text-[2.5rem] sm:text-[3rem] lg:text-display-xl font-display font-bold text-text-primary leading-[1.08] tracking-tight mb-6">
                         {headingWords.map((word, i) => (
-                            <motion.span
-                                key={i}
-                                custom={i}
-                                variants={wordVariants}
-                                initial="hidden"
-                                animate="visible"
-                                className={`inline-block mr-[0.3em] ${word.accent ? "text-accent" : ""
-                                    } ${word.italic ? "italic" : ""}`}
-                            >
-                                {word.text}
-                            </motion.span>
+                            <>
+                                <motion.span
+                                    key={i}
+                                    custom={i}
+                                    variants={wordVariants}
+                                    initial="hidden"
+                                    animate="visible"
+                                    className={`inline-block mr-[0.3em] ${word.accent ? "text-accent" : ""
+                                        } ${word.italic ? "italic" : ""}`}
+                                >
+                                    {word.text}
+                                </motion.span>
+                                {word.break && <br />}
+                            </>
                         ))}
                     </h1>
 
